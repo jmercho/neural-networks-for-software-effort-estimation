@@ -1,0 +1,51 @@
+==================================================
+DATASET METRICS: KITCHENHAM_NORMALIZED
+==================================================
+
+Original dataset shape: (145, 8)
+Dataset shape after removing NaN values: 135 rows
+Dataset shape after removing zeros in target: 135 rows
+Total features used: 7
+Features: Project, Client.code, Project.type, Actual.duration, Adjusted.function.points, First.estimate, First.estimate.method
+Target: Actual.effort
+
+Feature correlations with target:
+- First.estimate: 0.9937
+- Adjusted.function.points: 0.9819
+- Actual.duration: 0.5934
+- Project.type: 0.0779
+- First.estimate.method: 0.0491
+- Project: 0.0475
+- Client.code: 0.0350
+
+Data statistics before preprocessing:
+          Project  Client.code  Project.type  Actual.duration  Adjusted.function.points  First.estimate  First.estimate.method  Actual.effort
+count  135.000000   135.000000    135.000000       135.000000                135.000000      135.000000             135.000000     135.000000
+mean    72.666667     2.081481      2.518519       200.962963                527.751333     2921.577778               2.977778    3169.125926
+std     42.722814     0.829060      0.721233       130.558982               1572.904427     7016.578107               1.734060    9933.628371
+min      1.000000     1.000000      0.000000        37.000000                 18.900000      200.000000               0.000000     219.000000
+25%     34.500000     2.000000      2.000000       121.500000                123.985000      899.000000               1.500000     880.500000
+50%     73.000000     2.000000      3.000000       171.000000                258.240000     1770.000000               4.000000    1557.000000
+75%    110.500000     2.000000      3.000000       240.000000                554.580000     2887.000000               4.000000    2877.500000
+max    145.000000     6.000000      5.000000       946.000000              18137.480000    79870.000000               5.000000  113930.000000
+
+Outliers removed: 38 (28.15% of original data)
+
+Applied polynomial features (interactions only): Input dimensions 7 -> 28
+
+Data statistics after preprocessing:
+X shape: (97, 28)
+X mean: [-3.36042763e-15  1.55431223e-15  2.06249679e-15 -5.36913011e-15
+  7.43963882e-16  3.90008758e-16 -1.41696506e-15  5.26497517e-17
+  4.60113047e-16  2.59128343e-15 -2.36694971e-15 -1.06558519e-15
+  3.82282980e-16  8.13782031e-15  1.01064632e-15 -4.16619774e-16
+  1.49365056e-16  1.95490817e-15  1.96177553e-15 -4.30354492e-16
+ -3.26657372e-15  6.70712054e-16  1.03067612e-15  1.89195738e-15
+  2.70116117e-16 -7.30229165e-16  2.28911964e-16 -3.02163792e-16]
+X std: [1. 0. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+ 1. 1. 1. 1.]
+y mean: 7.263679132054061
+y std: 0.8184336360592416
+
+Training set size: 77
+Test set size: 20

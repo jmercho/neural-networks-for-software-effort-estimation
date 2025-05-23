@@ -1,0 +1,288 @@
+
+==================================================
+Results for albrecht:
+
+MLP+Evolutivo:
+Best hyperparameters:
+- hidden_layers: [64]
+- activation: relu
+- lr: 0.0005
+- dropout: 0.1
+
+Metrics:
+- MAE: 0.7839
+- MSE: 0.8822
+- RMSE: 0.9392
+- MMRE: 1.0732
+- MdMRE: 0.2518
+- PRED(25): 40.0000
+- PRED(30): 60.0000
+
+CNN+GRU:
+Best hyperparameters:
+- conv_filters: 16
+- gru_units: 64
+- lr: 0.0001
+- dropout: 0.1
+
+Metrics:
+- MAE: 0.8705
+- MSE: 1.1293
+- RMSE: 1.0627
+- MMRE: 1.2289
+- MdMRE: 0.2948
+- PRED(25): 40.0000
+- PRED(30): 60.0000
+
+
+==================================================
+Results for china:
+
+MLP+Evolutivo:
+Best hyperparameters:
+- hidden_layers: [128]
+- activation: tanh
+- lr: 0.001
+- dropout: 0.2
+
+Metrics:
+- MAE: 0.0846
+- MSE: 0.0149
+- RMSE: 0.1219
+- MMRE: 0.0114
+- MdMRE: 0.0085
+- PRED(25): 100.0000
+- PRED(30): 100.0000
+
+CNN+GRU:
+Best hyperparameters:
+- conv_filters: 32
+- gru_units: 32
+- lr: 0.0005
+- dropout: 0.1
+
+Metrics:
+- MAE: 0.1286
+- MSE: 0.0582
+- RMSE: 0.2412
+- MMRE: 0.0222
+- MdMRE: 0.0092
+- PRED(25): 98.3051
+- PRED(30): 98.3051
+
+
+==================================================
+Results for isbsg:
+
+MLP+Evolutivo:
+Best hyperparameters:
+- hidden_layers: [128, 64, 32]
+- activation: tanh
+- lr: 0.001
+- dropout: 0.3
+
+Metrics:
+- MAE: 0.4636
+- MSE: 0.4806
+- RMSE: 0.6933
+- MMRE: 0.0806
+- MdMRE: 0.0505
+- PRED(25): 93.4783
+- PRED(30): 95.6522
+
+CNN+GRU:
+Best hyperparameters:
+- conv_filters: 16
+- gru_units: 64
+- lr: 0.0001
+- dropout: 0.1
+
+Metrics:
+- MAE: 0.4952
+- MSE: 0.5005
+- RMSE: 0.7075
+- MMRE: 0.0849
+- MdMRE: 0.0498
+- PRED(25): 95.6522
+- PRED(30): 95.6522
+
+
+==================================================
+Results for kitchenham:
+
+MLP+Evolutivo:
+Best hyperparameters:
+- hidden_layers: [64, 32]
+- activation: tanh
+- lr: 0.001
+- dropout: 0.1
+
+Metrics:
+- MAE: 0.2851
+- MSE: 0.1418
+- RMSE: 0.3765
+- MMRE: 0.0408
+- MdMRE: 0.0326
+- PRED(25): 100.0000
+- PRED(30): 100.0000
+
+CNN+GRU:
+Best hyperparameters:
+- conv_filters: 16
+- gru_units: 64
+- lr: 0.001
+- dropout: 0.2
+
+Metrics:
+- MAE: 0.2547
+- MSE: 0.0987
+- RMSE: 0.3142
+- MMRE: 0.0363
+- MdMRE: 0.0285
+- PRED(25): 100.0000
+- PRED(30): 100.0000
+
+
+==================================================
+Results for maxwell:
+
+MLP+Evolutivo:
+Best hyperparameters:
+- hidden_layers: [64, 32]
+- activation: tanh
+- lr: 0.0005
+- dropout: 0.2
+
+Metrics:
+- MAE: 1.4775
+- MSE: 2.8302
+- RMSE: 1.6823
+- MMRE: 0.1670
+- MdMRE: 0.1059
+- PRED(25): 66.6667
+- PRED(30): 100.0000
+
+CNN+GRU:
+Best hyperparameters:
+- conv_filters: 64
+- gru_units: 32
+- lr: 0.0005
+- dropout: 0.3
+
+Metrics:
+- MAE: 0.4895
+- MSE: 0.3176
+- RMSE: 0.5636
+- MMRE: 0.0563
+- MdMRE: 0.0789
+- PRED(25): 100.0000
+- PRED(30): 100.0000
+
+
+==================================================
+Results for miyazaki94:
+
+MLP+Evolutivo:
+Best hyperparameters:
+- hidden_layers: [64]
+- activation: tanh
+- lr: 0.001
+- dropout: 0.3
+
+Metrics:
+- MAE: 0.5180
+- MSE: 0.3681
+- RMSE: 0.6067
+- MMRE: 0.1313
+- MdMRE: 0.1187
+- PRED(25): 100.0000
+- PRED(30): 100.0000
+
+CNN+GRU:
+Best hyperparameters:
+- conv_filters: 16
+- gru_units: 16
+- lr: 0.001
+- dropout: 0.2
+
+Metrics:
+- MAE: 0.3041
+- MSE: 0.1429
+- RMSE: 0.3781
+- MMRE: 0.0850
+- MdMRE: 0.0754
+- PRED(25): 100.0000
+- PRED(30): 100.0000
+
+
+==================================================
+Results for nasa93:
+
+MLP+Evolutivo:
+Best hyperparameters:
+- hidden_layers: [128, 64]
+- activation: tanh
+- lr: 0.001
+- dropout: 0.1
+
+Metrics:
+- MAE: 0.5409
+- MSE: 0.4850
+- RMSE: 0.6964
+- MMRE: 0.0988
+- MdMRE: 0.0870
+- PRED(25): 100.0000
+- PRED(30): 100.0000
+
+CNN+GRU:
+Best hyperparameters:
+- conv_filters: 16
+- gru_units: 32
+- lr: 0.0001
+- dropout: 0.3
+
+Metrics:
+- MAE: 0.6381
+- MSE: 0.6380
+- RMSE: 0.7987
+- MMRE: 0.1325
+- MdMRE: 0.0852
+- PRED(25): 77.7778
+- PRED(30): 88.8889
+
+
+==================================================
+Results for desharnais:
+
+MLP+Evolutivo:
+Best hyperparameters:
+- hidden_layers: [64, 32]
+- activation: tanh
+- lr: 0.001
+- dropout: 0.3
+
+Metrics:
+- MAE: 0.3396
+- MSE: 0.2160
+- RMSE: 0.4647
+- MMRE: 0.0445
+- MdMRE: 0.0247
+- PRED(25): 100.0000
+- PRED(30): 100.0000
+
+CNN+GRU:
+Best hyperparameters:
+- conv_filters: 32
+- gru_units: 16
+- lr: 0.001
+- dropout: 0.3
+
+Metrics:
+- MAE: 0.3704
+- MSE: 0.2213
+- RMSE: 0.4704
+- MMRE: 0.0474
+- MdMRE: 0.0262
+- PRED(25): 100.0000
+- PRED(30): 100.0000
+

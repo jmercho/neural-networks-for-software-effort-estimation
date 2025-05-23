@@ -1,0 +1,43 @@
+==================================================
+DATASET METRICS: ISBSG
+==================================================
+
+Original dataset shape: (952, 11)
+Dataset shape after removing NaN values: 361 rows
+Dataset shape after removing zeros in target: 361 rows
+Total features used: 4
+Features: FunctionalSize, ValueAdjustmentFactor, ProjectElapsedTime, MaxTeamSize
+Target: NormalisedWorkEffortLevel1
+
+Feature correlations with target:
+- ProjectElapsedTime: 0.7119
+- FunctionalSize: 0.6763
+- MaxTeamSize: 0.5586
+- ValueAdjustmentFactor: 0.0729
+
+Data statistics before preprocessing:
+       FunctionalSize  ValueAdjustmentFactor  ProjectElapsedTime  MaxTeamSize  NormalisedWorkEffortLevel1
+count      361.000000             361.000000          361.000000    361.00000                  361.000000
+mean       398.850416               1.012438            7.098892      8.12964                 3976.515235
+std        538.664867               0.059811            5.105542     17.66022                 7148.776104
+min         24.000000               0.650000            0.500000      0.50000                   26.000000
+25%        118.000000               1.000000            4.000000      3.00000                  926.000000
+50%        220.000000               1.000000            6.000000      5.00000                 1946.000000
+75%        445.000000               1.020000            8.000000      8.00000                 3874.000000
+max       4078.000000               1.220000           44.000000    309.00000                73920.000000
+
+Outliers removed: 131 (36.29% of original data)
+
+Applied polynomial features (interactions only): Input dimensions 4 -> 10
+
+Data statistics after preprocessing:
+X shape: (230, 10)
+X mean: [-4.47540555e-15 -1.12750871e-13  2.96477818e-15  1.22945132e-15
+ -1.78166660e-15 -6.23824663e-15 -3.62781966e-15  2.36525775e-16
+  1.34964503e-15  8.57285257e-16]
+X std: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+y mean: 7.222842170098237
+y std: 0.9027664361924378
+
+Training set size: 184
+Test set size: 46

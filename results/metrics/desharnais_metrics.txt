@@ -1,0 +1,54 @@
+==================================================
+DATASET METRICS: DESHARNAIS
+==================================================
+
+Original dataset shape: (81, 9)
+Dataset shape after removing NaN values: 77 rows
+Dataset shape after removing zeros in target: 77 rows
+Total features used: 8
+Features: TeamExp, ManagerExp, YearEnd, Transactions, Entities, PointsAdjust, Envergure, Language
+Target: Effort
+
+Feature correlations with target:
+- PointsAdjust: 0.7037
+- Transactions: 0.5831
+- Entities: 0.5002
+- Envergure: 0.4171
+- TeamExp: 0.2593
+- Language: 0.2499
+- ManagerExp: 0.1601
+- YearEnd: 0.0315
+
+Data statistics before preprocessing:
+         TeamExp  ManagerExp    YearEnd  Transactions    Entities  PointsAdjust  Envergure   Language        Effort
+count  77.000000   77.000000  77.000000     77.000000   77.000000     77.000000  77.000000  77.000000     77.000000
+mean    2.298701    2.649351  85.779221    177.467532  120.545455    298.012987  27.454545   1.558442   4833.909091
+std     1.328483    1.519749   1.142750    146.080690   86.108186    182.263148  10.530089   0.716231   4188.185109
+min     0.000000    0.000000  83.000000      9.000000    7.000000     73.000000   5.000000   1.000000    546.000000
+25%     1.000000    1.000000  85.000000     86.000000   54.000000    175.000000  19.000000   1.000000   2331.000000
+50%     2.000000    3.000000  86.000000    134.000000   96.000000    258.000000  28.000000   1.000000   3542.000000
+75%     4.000000    4.000000  86.000000    213.000000  169.000000    377.000000  35.000000   2.000000   5817.000000
+max     4.000000    7.000000  88.000000    886.000000  387.000000   1127.000000  52.000000   3.000000  23940.000000
+
+Outliers removed: 2 (2.60% of original data)
+
+Applied polynomial features (interactions only): Input dimensions 8 -> 36
+
+Data statistics after preprocessing:
+X shape: (75, 36)
+X mean: [-4.79616347e-16 -2.34627133e-16  1.64172379e-13 -1.72010554e-15
+  1.14723046e-15  3.48462000e-15  2.88065867e-15  1.38555833e-15
+ -3.78956126e-16  1.15463195e-15 -4.58892184e-16 -5.68434189e-16
+ -8.43769499e-16  8.79296636e-16  7.10542736e-16  7.17204074e-16
+ -3.52310773e-16  5.22544970e-16 -1.82076576e-16  3.24185123e-16
+  9.68114477e-16 -4.20996571e-15  5.87826084e-15 -9.95944068e-15
+ -3.03164901e-15  2.47505720e-15  3.52902892e-15  1.20200146e-15
+ -7.66794036e-16 -2.37439698e-15  2.24709140e-15  5.92118946e-17
+  6.06921920e-16  7.10542736e-17 -1.11910481e-15  2.23820962e-15]
+X std: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+ 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+y mean: 8.145330417844049
+y std: 0.7955749559007325
+
+Training set size: 60
+Test set size: 15

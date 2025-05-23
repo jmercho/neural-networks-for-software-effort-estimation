@@ -1,0 +1,43 @@
+==================================================
+DATASET METRICS: NASA93
+==================================================
+
+Original dataset shape: (93, 24)
+Dataset shape after removing NaN values: 93 rows
+Dataset shape after removing zeros in target: 93 rows
+Total features used: 4
+Features: recordnumber, center, year, equivphyskloc
+Target: act_effort
+
+Feature correlations with target:
+- equivphyskloc: 0.5949
+- center: 0.4210
+- recordnumber: 0.3948
+- year: 0.3547
+
+Data statistics before preprocessing:
+       recordnumber     center         year  equivphyskloc   act_effort
+count     93.000000  93.000000    93.000000      93.000000    93.000000
+mean      47.752688   3.279570  1980.827957      94.022043   624.411828
+std       28.229901   1.683459     3.335004     133.597947  1135.928065
+min        1.000000   1.000000  1971.000000       0.900000     8.400000
+25%       24.000000   2.000000  1979.000000      15.400000    70.000000
+50%       47.000000   2.000000  1980.000000      47.500000   252.000000
+75%       70.000000   5.000000  1983.000000     111.000000   600.000000
+max      101.000000   6.000000  1987.000000     980.000000  8211.000000
+
+Outliers removed: 6 (6.45% of original data)
+
+Applied polynomial features (interactions only): Input dimensions 4 -> 10
+
+Data statistics after preprocessing:
+X shape: (87, 10)
+X mean: [-9.95372367e-17  1.44711829e-15  1.53228388e-12 -6.99312894e-16
+  1.08597677e-15  2.68495315e-15 -7.59290459e-16  5.10702591e-15
+ -3.64969868e-16  8.16715788e-17]
+X std: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+y mean: 5.235615173196524
+y std: 1.3265772525964918
+
+Training set size: 69
+Test set size: 18
